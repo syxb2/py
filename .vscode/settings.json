@@ -1,0 +1,13 @@
+{
+  // "python.linting.flake8Enabled": true,
+  // "python.formatting.provider": "yapf",
+  // "python.formatting.yapfArgs": [
+  //   "--style={based_on_style=pep8, arithmetic_precedence_indication=True, column_limit=79, coalesce_brackets=True, dedent_closing_brackets=True}"
+  // ],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "ms-python.python",
+}
