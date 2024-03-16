@@ -20,4 +20,6 @@
 └── test # other codes
     ├── list.py
     └── test.py
+
+6 directories, 9 files
 ```
