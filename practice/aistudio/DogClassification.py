@@ -135,7 +135,8 @@ for i in pathlist:
     rresults = moduleres.classification(data=input_dict)
     print("resnet50's predicted class: %s" % (list(rresults[0][0].keys()))[0])
     l = list((rresults[0][0]).keys())
-    print("real class: %s" % (dic[i][0]))
+    print("real class: %s" % (dic[i][0]))  # dic[i][0] is the real class of path i.
+    # l[0].lower() is the result of the prediction.
     if l[0].lower().find(dic[i][0]) != -1:
         rcor += 1
         print("True")
@@ -159,7 +160,8 @@ for i in pathlist:
     vresults = modulevgg.classification(data=input_dict)
     print("vgg19's predicted class: %s" % (list(vresults[0][0].keys()))[0])
     l = list((vresults[0][0]).keys())
-    print("real class: %s" % (dic[i][0]))
+    print("real class: %s" % (dic[i][0]))  # dic[i][0] is the real class of path i.
+    # l[0].lower() is the result of the prediction.
     if l[0].lower().find(dic[i][0]) != -1:
         vcor += 1
         print("True")
@@ -237,6 +239,7 @@ for i in pathlist:
     xresults = modulexcp.classification(data=input_dict)
     l = list((xresults[0][0]).keys())
     num = -1
+    # l[0].lower() is the result of the prediction.
     if l[0].lower().find("basset") != -1:
         num = 0
     elif l[0].lower().find("beagle") != -1:
@@ -259,7 +262,7 @@ for i in pathlist:
         num = 9
     else:
         num = 10
-    xmatx[num][numdic[dic[i][0]]] += 1
+    xmatx[num][numdic[dic[i][0]]] += 1  # dic[i][0] is the real class of path i.
 
 print(xmatx)
 
