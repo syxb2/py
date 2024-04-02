@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 modulexcp = hub.Module(name="xception71_imagenet")
-moduleres = hub.Module(name="resnet_v2_50_imagenet")
+# moduleres = hub.Module(name="resnet_v2_50_imagenet")
 modulevgg = hub.Module(name="vgg19_imagenet")
 
 
