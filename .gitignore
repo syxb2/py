@@ -1,3 +1,5 @@
 .DS_Store
 .vscode
-venv
+.venv
+test-dog10
+CMakeFiles
